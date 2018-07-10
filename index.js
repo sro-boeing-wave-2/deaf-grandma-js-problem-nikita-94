@@ -18,16 +18,16 @@ let count = 0;
 
 print('What do you want to say to Grandma!!');
 while (flag === 0) {
-  let message = prompt();
+  const message = prompt();
   if (isUppercase(message)) {
     if (message === 'BYE') {
-      count++;
+      count+1;
       if (count === 3) {
         flag = 1;
         break;
       }
     }
-    print('NO, NOT SINCE' +' '+ getRandomValue(1930, 1950));
+    print('NO, NOT SINCE'+' '+getRandomValue(1930, 1950));
   }
   else {
     print('HUH?! SPEAK UP, SONNY!');

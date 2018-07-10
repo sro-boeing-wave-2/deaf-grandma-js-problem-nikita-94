@@ -11,9 +11,6 @@ const isUppercase = (s) => {
   if (s === s.toUpperCase()) {
     return true;
   }
-  else {
-    return false
-  }
 };
 
 module.exports = isUppercase;
