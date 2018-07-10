@@ -13,3 +13,23 @@ const { prompt, print } = require('./prompt-print');
  * 1. prompt function to get input from the user
  * 2. print function to print text on to the console
  */
+let flag = 0;
+let count = 0;
+// ;
+print('What do you want to say to Grandma!!');
+while (flag === 0) {
+  let message = prompt();
+  if (isUppercase(message)) {
+    if (message === 'BYE') {
+      count++;
+      if (count === 3) {
+        flag = 1;
+        break;
+      }
+    }
+    print('NO, NOT SINCE' +' '+ getRandomValue(1930, 1950));
+  }
+  else {
+    print('HUH?! SPEAK UP, SONNY!');
+  }
+}
