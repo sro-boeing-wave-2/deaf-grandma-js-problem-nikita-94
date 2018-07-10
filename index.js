@@ -21,15 +21,15 @@ while (flag === 0) {
   const message = prompt();
   if (isUppercase(message)) {
     if (message === 'BYE') {
-      count+1;
+      count += 1;
       if (count === 3) {
         flag = 1;
         break;
       }
     }
-    print('NO, NOT SINCE'+' '+getRandomValue(1930, 1950));
-  }
-  else {
+    const str = 'NO, NOT SINCE ';
+    print(str + getRandomValue(1930, 1950));
+  } else {
     print('HUH?! SPEAK UP, SONNY!');
   }
 }
